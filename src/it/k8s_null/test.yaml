@@ -11,6 +11,11 @@ paths:
       description: "Get the list of upcoming events"
       operationId: upcoming-events
       x-dart-rich-operationId: upcoming-events-test
+      parameters:
+        - name: Accept-Language
+          in: header
+          schema:
+            type: string
       requestBody:
         required: true
         content:
@@ -553,6 +558,7 @@ components:
       type: string
       enum:
         - Ahoy There
+        - application+json
         - 18 Spaces Here
         - 667
     IntTypeEnum:
@@ -561,3 +567,13 @@ components:
         - 1
         - 2
         - 3
+    ObjectContainingEnum:
+      type: object
+      properties:
+        name:
+          type: string
+        enumFieldAllOf:
+          allOf:
+            - $ref: '#/components/schemas/NumericAndSpacedEnum'
+        enumFieldPlainRef:
+          $ref: '#/components/schemas/NumericAndSpacedEnum'
