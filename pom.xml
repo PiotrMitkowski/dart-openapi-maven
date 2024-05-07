@@ -74,7 +74,7 @@
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib-jdk8</artifactId>
-      <version>[1.7.10]</version>
+      <version>1.9.24</version>
     </dependency>
 
     <dependency>
@@ -168,13 +168,13 @@
           <execution>
             <id>default-compile</id>
             <phase>none</phase>
-            <configuration />
+            <configuration/>
           </execution>
           <!-- Replacing default-testCompile as it is treated specially by maven -->
           <execution>
             <id>default-testCompile</id>
             <phase>none</phase>
-            <configuration />
+            <configuration/>
           </execution>
           <execution>
             <id>java-compile</id>
@@ -182,7 +182,7 @@
             <goals>
               <goal>compile</goal>
             </goals>
-            <configuration />
+            <configuration/>
           </execution>
           <execution>
             <id>java-test-compile</id>
@@ -190,7 +190,7 @@
             <goals>
               <goal>testCompile</goal>
             </goals>
-            <configuration />
+            <configuration/>
           </execution>
         </executions>
       </plugin>
