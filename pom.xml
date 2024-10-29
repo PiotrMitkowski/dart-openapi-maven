@@ -34,7 +34,7 @@
 	</scm>
 
 	<properties>
-		<openapi-codegen-version>6.0.1</openapi-codegen-version>
+		<openapi-codegen-version>7.6.0</openapi-codegen-version>
     <maven.compiler.target>1.11</maven.compiler.target>
     <maven.compiler.source>1.11</maven.compiler.source>
     <kotlin.version>1.7.10</kotlin.version>
@@ -168,13 +168,13 @@
           <execution>
             <id>default-compile</id>
             <phase>none</phase>
-            <configuration />
+            <configuration/>
           </execution>
           <!-- Replacing default-testCompile as it is treated specially by maven -->
           <execution>
             <id>default-testCompile</id>
             <phase>none</phase>
-            <configuration />
+            <configuration/>
           </execution>
           <execution>
             <id>java-compile</id>
@@ -182,7 +182,7 @@
             <goals>
               <goal>compile</goal>
             </goals>
-            <configuration />
+            <configuration/>
           </execution>
           <execution>
             <id>java-test-compile</id>
@@ -190,7 +190,7 @@
             <goals>
               <goal>testCompile</goal>
             </goals>
-            <configuration />
+            <configuration/>
           </execution>
         </executions>
       </plugin>
